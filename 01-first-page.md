@@ -14,19 +14,23 @@ doctype, head, body
 
 ### HTML and CSS validation
 
+do it
+
 ### CSS Terms
 
-selector: p (type selector), .class, #id
-property: p { font-size: ...; }
-value: p { font-size: 16px; }
+* selector: p (type selector), .class, #id
+* property: p { font-size: ...; }
+* value: p { font-size: 16px; }
 
 ### Referencing CSS
 
 preferably single file, in head
 
+```
 <head>
   <link rel="stylesheet" href="main.css">
 </head>
+```
 
 ## CSS Resets
 
