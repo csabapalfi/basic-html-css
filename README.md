@@ -9,3 +9,4 @@ Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-cs
 ## Lessons
 
 * [1. First web page](01-first-page.md)
+* [2. Basic HTML](02-basic-html.md)

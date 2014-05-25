@@ -72,4 +72,10 @@
 
 ### Hyperlinks
 
-* ```a```
+* ```a``` - anchor, link from one web page or resource to another
+* inline element - but the only one which can wrap a block element (HTML5)
+* href (hyperlink reference) attribute, required, specifies destination
+* relative path vs absolute urls
+* mailto: links, with subject, body, cc
+* target="_blank" opens link a new window
+* link to part of the same page: id attribute on element, then ```<a>``` with href=id-value
