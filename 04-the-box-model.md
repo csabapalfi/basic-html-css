@@ -46,7 +46,7 @@
 * inline vertical padding may blend into the line above or below the given element
 * padding works like normal for block and inline-block elements
 
-## margin and padding declaration
+### margin and padding declaration
 
 * shorthand with 1 value: setting it on all four sides
 * shorthand with 2 values: top and bottom first, then left and right
@@ -55,16 +55,59 @@
 * use longhand for 1 or 2 values
 * use shorthand for 3 or more
 
-## margin and padding colors
+### margin and padding colors
 
 * they are completely transparent and don't accept any color values
 * they show the background colors of relative elements (since they're transparent)
 * margins - background color of the parent element
 * padding - background color of the element the padding is applied to
 
-## borders
+### borders
 
-...
+* fall between the padding and margin, outline around the element
+* has width, style, and color (shorthand order or border-width, etc)
+* width, color: standard length and color values
+* style: solid, double, dashed, dotted, and none
+* indidual borders and properties can also be specified: border-top, border-left-width
+
+### border-radius
+
+* enables rounded corners
+* accepts length units: radius by which the corners of an element are to be rounded
+* one value shorthand: all corners
+* two values shorthand: top-left/bottom-right and top-right/bottom-left
+* four values shorthand: clockwise, starting from top-left
+* longhand: e.g border-top-right-radius
+
+### box-sizing
+
+* additive by default
+* CSS3 introduces ```box-sizing```
+* values: content-box, padding-box, and border-box
+* content-box: the size of an element begins with the width and height properties, and then any padding, border, or margin property values are added on from there
+* padding-box: actual width, height: element width + padding (width 400 + 20 padding will be 400 px wide)
+* actual width, height: element width + padding + border (width 400 + 20 padding + 5 px border will be 400 px wide)
+* use border-box to make maths simpler (also helps when mixing percentages with px)
+* drawback of using box-sizing: older browser don't support it
+
+
+### vendor prefixes
+
+* browsers gradually began to support different CSS3 properties and values by the way of vendor prefixes (e.g ```-webkit-box-sizing```)
+*  as parts of the CSS3 specification are finalized and new browser versions are released, these vendor prefixes become less and less relevant
+* Mozilla Firefox: -moz-
+* Microsoft Internet Explorer: -ms-
+* Webkit (Google Chrome and Apple Safari): -webkit-
+
+### developer tools
+
+- Chrome: Alt+Cmd+I
+
+### universal selector
+
+* universal selector: *  - catch-all to select all elements
+* :before and :after pseudo-elements: dynamically generated with CSS
+
 
 
 

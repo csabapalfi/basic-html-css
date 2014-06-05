@@ -11,3 +11,4 @@ Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-cs
 * [1. First web page](01-first-page.md)
 * [2. Basic HTML](02-basic-html.md)
 * [3. Basic CSS](03-basic-css.md)
+* [4. The box model](04-the-box-model.md)
