@@ -13,3 +13,4 @@ Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-cs
 * [3. Basic CSS](03-basic-css.md)
 * [4. The box model](04-the-box-model.md)
 * [5. Positioning content](05-positioning-content.md)
+* [6. Typography](06-typography.md)
