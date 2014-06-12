@@ -86,4 +86,47 @@
 ### letter-spacing
 
 * adjust the space (or tracking) between the letters on the page
+* positive - further apart, negative - closer
+* use relative value to ensure it works across different font sizes
+
+### word-spacing
+
+* spacing between words
+
+### web safe fonts
+
+* few fonts pre-installed on every device
+* Arial
+* Courier New, Courier
+* Garamond
+* Georgia
+* Lucida Sans, Lucida Grande, Lucida
+* Palatino Linotype
+* Tahoma
+* Times New Roman, Times
+* Trebuchet
+* Verdana
+
+### embedding web fonts
+
+* upload fonts to a server (check font lincence!)
+* include them on a website via the CSS @font-face at-rule
+* surround embedded font-family name with quotation marks within any CSS reference
+* [Google Fonts](https://www.google.com/fonts)
+
+```
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster"), url("lobster.woff") format("woff");
+}
+```
+
+### Quotes, citations
+
+* ```<cite>``` - reference a creative work, author, or resource (typically title, author, URL)
+* ```<q>``` -  short, inline quotations, inline
+* ```<blockquote>``` -  longer external quotations, block
+* q, blockquote: the browser will insert the proper quotation marks (it even respects the global lang attribute)
+* q, blockquote: optional cite attribute - doesn't change appearance
+* blockquote can usually include citation: both cite attrubite and cite element
 
