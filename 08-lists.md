@@ -38,4 +38,30 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 ### Image as a list item marker
 
-...
+* set list-style-type to none
+* add small backround image (0 50% no-repeat)
+* add padding-left to push content right
+
+### list-style-position
+
+* list-style-position property can have values: inside, outside, inherit
+* default is outside - no content is wrapped around the marked
+
+
+### list-style shorthand
+
+* list-style-type followed by list-style-position - space separated
+
+### Horizontally displaying a list
+
+* make ```<li>```s inline-block
+* marker is automatically set to none
+* single spaces can be removed by adding comment between lis
+* inline-block is better than inline as allows specifying margins, paddings
+
+### Floating list
+
+* changing to inline-block or inline removes the marker
+* floating keeps to marker
+* need to add margin or padding to prevent markers overlapping content
+* always clear or contain floats

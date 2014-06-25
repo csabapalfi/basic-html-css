@@ -247,6 +247,24 @@ p a {
 
 /*
   ========================================
+  Speakers
+  ========================================
+*/
+
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding: 22px 0;
+  text-align: center;
+}
+
+.speaker {
+  margin-bottom: 44px;
+}
+
+/*
+  ========================================
   Primary header
   ========================================
 */
@@ -312,6 +330,15 @@ body {
 
 .nav {
   text-align: right;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
 }
 
 /*
