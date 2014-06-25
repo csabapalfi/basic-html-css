@@ -15,3 +15,4 @@ Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-cs
 * [5. Positioning content](05-positioning-content.md)
 * [6. Typography](06-typography.md)
 * [7. Backgrounds](07-backgrounds.md)
+* [8. Lists](08-lists.md)
