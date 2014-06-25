@@ -245,6 +245,13 @@ p a {
   font-weight: 100;
 }
 
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
 /*
   ========================================
   Speakers
@@ -257,6 +264,13 @@ p a {
   margin-top: 88px;
   padding: 22px 0;
   text-align: center;
+}
+
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
 }
 
 .speaker {

@@ -1,0 +1,38 @@
+## Adding media
+
+### adding images
+
+* ```<img>``` inline element
+* img element is a self-containing or empty element, single, doesn't wrap around any content
+* src attribute and value must exist with a valid URL
+* alt (alternative text) attribute, which describes the contents of an image
+* alt text is picked up by search engines, assistive technologies and also displayed if the image can't be
+
+### image formats
+
+* most commonly supported formats are gif, jpg, and png
+* jpg format provides quality images with high color counts but still decent file size (e.g photos)
+* png format is great for images with transparencies or low color counts (e.g. icons)
+
+### image sizing
+
+* important to tell the browser the size of the image evene before it's loaded - so it can reserve space for it and render faster
+* img tag accepts width and height attributes in HTML
+* CSS width and height overrides inline width and height
+* setting only width or height automatically adjusts the image size preserving aspect ratio
+* setting both works as well, might distort the image
+* setting width and height in HTML might have some semantic value but images usually resized in CSS
+
+### positioning images
+
+* by default appears in the same line as the content surrounding it (inline)
+* increases the height of the line it appears to match image height
+* when set to ```display: block``` then in it;s own line (as usual)
+* or flush left or right (by floating - it's original purpose)
+* usually need margin around a floated image (can also create a frame with background, padding)
+
+### image element vs background image
+
+* use ```<img>``` if image holds semantic value and relevant to the content of the page
+* use background image when image is part of design or UI and not directly relevant
+
