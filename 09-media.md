@@ -36,3 +36,37 @@
 * use ```<img>``` if image holds semantic value and relevant to the content of the page
 * use background image when image is part of design or UI and not directly relevant
 
+### adding audio
+
+* src attribute sepcifying source URL
+* requires a closing tag
+* several other attributes like autoplay, controls, loop (all boolean, no value just key required, attribute names self-explanatory)
+* if controls attribute is not present nothing is displayed
+* preload attribute - values: none, auto (default, all data preloaded), metadata (any metadata, e.g length)
+
+### audio types, fallbacks
+
+* different browsers support different formats
+* we can get rid of the src attribute and wrap a number of ```<source>``` elements with an audio tag
+* source element have ```src``` and ```type``` (e.g. audio/ogg, audio/mpeg) attributes
+* browser picks the one it recognizes
+* as last fallback arbitrary HTML can be added
+* media.io, mirovideoconverter for conversion
+
+### adding video
+
+* pretty similar to audio but with the video element
+* same src, autoplay, controls, loop, preload and fallback mechanism
+* displayed, even if controls is not present
+* size to be specified in CSS (using width and height properties)
+* poster attribute accepts an image URL to be shown before the video is played
+* an additional fallback option miht be a Youtube or Vimeo iframe
+
+### custom audio and video controls
+
+* by default controls are browser specific
+* custom look and feel can be added with javascript
+
+### Adding inline frames
+
+
