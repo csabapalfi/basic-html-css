@@ -77,3 +77,17 @@
 * iframe contents don't inherit styles from the page including them
 * links are opened within the frame
 * seamless boolean attribute changes above behaviour (but not supported by older browsers)
+
+### Figures
+
+* ```<figure>```, block-level, identify and wrap self-contained content, often media
+* may surround image, video, etc, or multiple of those (if they form a group)
+* if the figure element is moved it shouldn't disrupt the content of the page
+
+## Figure caption
+
+* ```<figcaption>``` element adds caption within a figure element
+* may appear before or after media, or anywhere within figure but only once
+* serves as caption for all content within the figure element
+* may also be used to replace img elements alt attribute
+
