@@ -69,4 +69,11 @@
 
 ### Adding inline frames
 
+* embedding another HTML page in the current one
+* iframe element, src attribute specifies the URL, may be relative to current page
 
+### Seamless iframes
+
+* iframe contents don't inherit styles from the page including them
+* links are opened within the frame
+* seamless boolean attribute changes above behaviour (but not supported by older browsers)
