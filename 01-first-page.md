@@ -12,6 +12,14 @@
 
 doctype, head, body
 
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body></body>
+</html>
+```
+
 ### HTML and CSS validation
 
 do it
