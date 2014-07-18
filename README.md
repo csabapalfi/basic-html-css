@@ -8,31 +8,30 @@ Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-cs
 
 ## Lessons
 
-* [1. Introduction](#intro)
-* [2. Basic HTML](#basic-html)
-* [3. Basic CSS](#basic-css)
-* [4. The box model](#box-model)
-* [5. Positioning content](#positioning)
-* [6. Typography](#typography)
-* [7. Backgrounds](#backgrounds)
-* [8. Lists](#lists)
-* [9. Media](#media)
+* [ 1. Introduction](#intro)
+* [ 2. Basic HTML](#basic-html)
+* [ 3. Basic CSS](#basic-css)
+* [ 4. The box model](#box-model)
+* [ 5. Positioning content](#positioning)
+* [ 6. Typography](#typography)
+* [ 7. Backgrounds](#backgrounds)
+* [ 8. Lists](#lists)
+* [ 9. Media](#media)
+* [10. Forms](#forms)
 
 ## 1. <a name="intro"></a> Introduction
 
-### [HTML Terms]()
+### HTML terms
 
 * element: ```a```
 * tag: ```<a>..</a>```
 * attribute: e.g. href ```<a href="http://shayhowe.com/">Shay Howe</a>```
 
-### Self closing tags
+### self closing tags
 
 ```<br> <embed> <hr> <img> <input> <link> <meta> <param> <source> <wbr>```
 
-### Structure
-
-doctype, head, body
+### structure: ```<!DOCTYPE>```, ```<head>```, ```<body>```
 
 ```
 <!DOCTYPE html>
@@ -46,13 +45,13 @@ doctype, head, body
 
 do it
 
-### CSS Terms
+### CSS terms
 
-* selector: p (type selector), .class, #id
-* property: p { font-size: ...; }
-* value: p { font-size: 16px; }
+* selector: ```p``` (type selector), ```.class```, ```#id```
+* property: ```p { font-size: ...; }```
+* value: ```p { font-size: 16px; }```
 
-### Referencing CSS
+### referencing CSS
 
 preferably single file, in head
 
@@ -62,7 +61,7 @@ preferably single file, in head
 </head>
 ```
 
-### CSS Resets
+### CSS resets
 
 * reset browser defaults
 * has to come at the top of your CSS file
@@ -71,7 +70,7 @@ preferably single file, in head
 
 ## 2. <a name="basic-html"></a> Basic HTML
 
-### Semantics - using the proper element
+### semantics - using the proper element
 
 * read [this post](http://boagworld.com/dev/semantic-code-what-why-how/)
 * screen readers, seo, shorter code, easier styling
