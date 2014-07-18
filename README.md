@@ -771,27 +771,109 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * by default controls are browser specific
 * custom look and feel can be added with javascript
 
-### Adding inline frames
+### adding inline frames
 
 * embedding another HTML page in the current one
 * iframe element, src attribute specifies the URL, may be relative to current page
 
-### Seamless iframes
+### seamless iframes
 
 * iframe contents don't inherit styles from the page including them
 * links are opened within the frame
-* seamless boolean attribute changes above behaviour (but not supported by older browsers)
+* ```seamless``` boolean attribute changes above behaviour (but not supported by older browsers)
 
-### Figures
+### figures
 
 * ```<figure>```, block-level, identify and wrap self-contained content, often media
 * may surround image, video, etc, or multiple of those (if they form a group)
 * if the figure element is moved it shouldn't disrupt the content of the page
 
-### Figure caption
+### figure caption
 
 * ```<figcaption>``` element adds caption within a figure element
 * may appear before or after media, or anywhere within figure but only once
 * serves as caption for all content within the figure element
 * may also be used to replace img elements alt attribute
+
+## 10. <a name="forms"></a> Forms
+
+* forms aquire user input
+* different elements are used to capture different types of data
+
+### initializing a form
+
+* ```<form>``` element wraps all the elements included in the form
+* ```action``` attribute: URL where the form should be sent to
+* ```method``` attribute: HTTP method used for submitting the form
+
+### text fields
+
+* ```<input>``` element with ```type``` attribute value ```text```
+* ```name``` attribute is used as the name of the control and also sent to the server
+* input element is self contained
+* originally the only type attribute values were text and password
+* HTML5 adds the following for semantic clarity: color, date, datetime, email, month, number, range, search, tel, time, url, week
+* iOS might make user input for some of these easier
+
+### textarea
+
+* ```<textarea>``` element, capture multiline text input
+* no ```type``` attribute as it only supports text
+* ```name``` attribute is similar to input element
+* two sizing attributes (```cols``` and ```rows```) but use CSS width and height instead
+
+### radio buttons
+
+* allow user to make quick choice from a small list of options
+* only one option can be choosen
+* ```<input>``` element with ```type="radio"```
+* ```value``` attribute specifies to value sent to the server
+* ```name``` attribute should be the same for all checkboxes in a group
+* ```checked``` boolean atrribute can be used to pre-select an option
+* input is still self-closing, value seen by user is outside it: ```<input type="radio" name="day" value="Friday" checked> Friday```
+
+### checkboxes
+
+* really similar to radio buttons, but
+* allows multiple choice, all values are sent to the server
+* ```<input>``` with ```type="checkbox"```
+
+### dropdown lists
+
+* when you have a longer list of options
+* a ```<select>``` element wraps all of the options marked up by ```<option>``` elements
+* the ```name``` attribute is on the select element
+* the ```value``` attribute is on the option element
+* the option element wraps the user visible text
+* selected boolean attribute marks the selected options
+* boolean attribute ```multiple``` on select element allows multiple selection
+* size of select element can be controlled via CSS
+
+### submit input
+
+* submit button can be added using input with ```type="submit"```
+* value attribute specifies button text
+
+### submit button
+
+* submit input is self contained, can't wrap more content
+* button element performs the same but not self-closing like input
+* can wrap button text (no value attrubite needed)
+
+### hidden input
+
+* input with ```"type="hidden"``` is not shown on the page but still submitted
+* can obviously still be viewed in page source, so not for secure stuff
+
+### file input
+
+* input with ```"type="file"``` can be used to attach files to a form
+* each browser comes with default styles for this, which can't be overriden CSS, JS help here
+
+### labels
+
+* provide caption or headings for from controls
+* using ```<label>``` element with ```for``` attribute matching the ```id``` attribute of the form element
+* clicking the label brings the linked form element into focus
+* label may also wrap input elements and in this case the ```for``` atrribute may be omitted
 
