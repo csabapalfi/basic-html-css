@@ -875,5 +875,39 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * provide caption or headings for from controls
 * using ```<label>``` element with ```for``` attribute matching the ```id``` attribute of the form element
 * clicking the label brings the linked form element into focus
-* label may also wrap input elements and in this case the ```for``` atrribute may be omitted
+* label may also wrap input elements and in this case the ```for``` and ```id``` atrributes may be omitted
 
+### fieldsets
+
+* group related form controls and label by wrapping them with ```<fieldset>```
+* block level element, default CSS has a border
+
+### legend
+
+* ```<legend>``` element provides caption or heading for ```fieldset``` element
+* should be the first element after the opening ```fieldset``` tag
+* appears on the top left of the fieldset border
+
+### ```disabled``` attribute
+
+* turns of element of control so that it's not interactive and values are not sent to the server
+* can be applied to input or fieldset (form?)
+* if input has type hidden and the disabled attribute as well then hidden is ignored
+
+### ```placeholder``` attribute
+
+* HTML 5 attribute, provides hint
+* disappears as soon as the control is clicked or gains focus (hence different from ```value```)
+* ```value``` for prepopulating data and ```placeholder``` for suggestions
+
+### ```required``` attribute
+
+* boolean attribute introduced in HTML5
+* enforces that form control contains a value before submitting
+* error message is shown if no value but currently the browsers control the error message styling
+* invalid elements and form controls can be styled using ```:optional``` and ```:required``` pseudo classes
+* validation also respect input types (e.g. ```type="email"``` should be a valid email)
+
+### additional attributes
+
+```accept autocomplete autofocus formaction formenctype formmethod formnovalidate formtarget max maxlength min pattern readonly selectionDirection step```
