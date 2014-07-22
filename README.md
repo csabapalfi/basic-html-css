@@ -981,4 +981,10 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * ```td:first-child``` gets a left border
 
 ### aligning text in table cells
-...
+
+* moving text around horizontally - ```text-align``` property as seen in typography
+* moving text around vertically - ```vertical-align``` property
+* ```vertical-align``` only works on display inline and table-cell elements
+* most used ```vertical-align``` values are ```top```, ```middle```, and ```bottom```
+* ```vertical-align``` positions text in relation to the table cell, for table-cell elements
+* or to the closest parent element, for inline-level elements
