@@ -18,6 +18,8 @@ Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-cs
 * [ 8. Lists](#lists)
 * [ 9. Media](#media)
 * [10. Forms](#forms)
+* [11. Tables](#tables)
+
 
 ## 1. <a name="intro"></a> Introduction
 
@@ -911,3 +913,45 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 ### additional attributes
 
 ```accept autocomplete autofocus formaction formenctype formmethod formnovalidate formtarget max maxlength min pattern readonly selectionDirection step```
+
+## 11. <a name="tables"></a> Tables
+
+* to mark up structured, tabular data
+* was abused back when didn't all support CSS
+
+### table, table rows and cells
+
+* table content is wrapped in a ```<table>``` element
+* a table may contain many rows that are marked up with the ```<tr>``` element
+* table cells are added into rows using the ```<td>``` element
+
+### table heading
+
+* using the ```<th>``` element instead of td marks a cell as a table header
+* table header adds semantic value to the content
+* ```scope``` atribute on a th specifies the what the header relates to
+* potential scope values are ```col```, ```row```, ```colgroup```, and ```rowgroup```
+* the headers attribute may be used to associate a cell to a header
+* above is done by specifying the linked ```<th>```'s id attribute in the cell's (td or th) headers attribute
+
+### table caption
+
+* provides a title for the table using the ```<caption>``` element
+* the caption element has to be the first element after the opening table tag
+
+### table head, body and foot
+
+* content of a table maybe broken to groups: head, body and foot
+* ```<thead>``` element wraps the heading row(s) of the table and comes after any caption and before any tbody elements
+* ```<tbody>``` element wraps the primary data rows
+* ```<tfoot>``` element wraps the rows outlining the table
+* before HTML5 tfoot had to come directly after thead
+
+### combining multiple cells
+
+* td or th can have a ```colspan``` or ```rowspan``` attribute
+* colspan specifies how many columns the cell should span across (default is one)
+* rowspan is the same as colspan but for rows
+
+
+
