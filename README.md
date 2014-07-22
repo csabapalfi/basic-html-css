@@ -953,5 +953,32 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * colspan specifies how many columns the cell should span across (default is one)
 * rowspan is the same as colspan but for rows
 
+## ```border-collapse```
+
+* adding border to table-cell can cause borders stacking up (on the inside)
+* ```border-collapse``` property for tables have 3 values: collapse, separate, and inherit
+* collapse collapses/condenses the borders to one border, separate stack them up against each other
 
 
+### border-spacing
+
+* when using ```border-collapse: separate``` (or wasn't defined) you can specify the space between borders
+* use this instead of a margin to avoid more space between cells than on the sides
+* accepts a length value and separates borders by that length
+* when two lengths are specified the first is horizontal, second is vertical spacing
+
+### adding borders to rows
+
+* make sure border-collapse is collapse
+* add border bottom to th and tr
+* set no border to ```th:last-child```
+
+### striping tables
+
+* use ```tr:nth-child(even)``` to set color
+* make sure ```border-collapse: separate;``` and ```border-spacing: 0;``` is set on the table to avoid issue because td includes a border by default but th doesn't
+* only set right and bottom borders since border-collapse is separate
+* ```td:first-child``` gets a left border
+
+### aligning text in table cells
+...
