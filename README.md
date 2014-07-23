@@ -323,7 +323,7 @@ preferably single file, in head
 
 ## 5. <a name="positioning"></a> Positioning content
 
-### Positioning with Floats
+### positioning with floats
 
 * the float property allows us to take an element, remove it from the normal flow of a page
 * and position it to the left or right of its parent element
@@ -396,7 +396,7 @@ preferably single file, in head
 * low tech, simple solution: no space between start and end tags
 * another low tech solution: start HTML comment after end tag, close comment before start tag
 
-### Creating a reusable layout
+### creating a reusable layout
 
 * best to write modular styles that may be reused elsewhere
 * floats vs inline-block is open to debate
@@ -404,7 +404,7 @@ preferably single file, in head
 * and float to wrap around content (as originally intended)
 * new CSS specs: watch out for ```flex-``` and ```grid-``` based properties—that
 
-### Uniquely Positioning Elements
+### uniquely Positioning Elements
 
 * precisely positioning elements: floats or inline-block might not do the job
 * typically, most positioning can be handled without the use of the position property and box offset properties, but in certain cases they can be extremely helpful
@@ -435,7 +435,7 @@ preferably single file, in head
 * typeface is what we see, how text looks, feels, and reads, the artistic value
 * font: the file containing a typeface, method of delivering artistic value
 
-### Adding color to text
+### adding color to text
 
 * ```color``` property
 * add it to html element to set the color for all text on the page
@@ -474,7 +474,7 @@ preferably single file, in head
 * or if using a baseline grid might want to specify in pixels
 * may also be used to vertically center text within an element (buttons, alerts, other single line text)
 
-### shorthand
+### font shorthand
 
 * ```font: font-style font-variant font-weight font-size/line-height font-family, font-family```
 * everything optional apart from font-size and font-family
@@ -552,7 +552,7 @@ preferably single file, in head
 }
 ```
 
-### Quotes, citations
+### quotes, citations
 
 * ```<cite>``` - reference a creative work, author, or resource (typically title, author, URL)
 * ```<q>``` -  short, inline quotations, inline
@@ -566,21 +566,21 @@ preferably single file, in head
 * Backgrounds can be a solid color, an image, a gradient, or these combined.
 * ```background``` - shorthand for setting background properties
 
-### Setting background color
+### setting background color
 
 * background-color: accepts color values (or use background shorthand)
 * transparent backgrounds (hsla, rgba) - might not be supported by all browsers, specify two background-color props, a safe fallback color first
 
-### Setting background image
+### setting background image
 
 * background-image: (or background shorthand) - accepts image source identified by url() function (usual href rules, needs to be quouted)
 
-### Background repeat
+### background repeat
 
 * a background image repeated indefinitely, both vertically and horizontally to fill up the element (if image is smaller)
 * ```background-repeat property```: repeat, repeat-x, repeat-y, and no-repeat
 
-### Background position
+### background position
 
 * background images are positioned in the top-left corner by default
 * ```background position```: horizontal offset vertical offset
@@ -641,13 +641,13 @@ preferably single file, in head
 
 HTML has 3 types of lists: unordered, ordered, and description lists
 
-### Unordered lists
+### unordered lists
 
 * ```<ul>``` unordered list block-level element
 * ```<li>``` list items
 * by default most browsers add a solid dot list item marker and margin and padding
 
-### Ordered list
+### ordered lists
 
 * ```<ol>``` ordered list element
 * works pretty much similarly to ```<ul>``` but order matters
@@ -658,24 +658,24 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * ```value``` attribute on an individual ```<li>``` within an ```<ol>``` changes its value within the list
 * any item appearing after the one with the value is calculated accordingly
 
-### Description lists
+### description lists
 
 * description lists are used to outline multiple terms and their descriptions (e.g. glossary)
 * description list block-level element, ```<dl>```
 * an item consists of one or more description terms ```<dt>``` followed by one or more descriptions ```<dd>```
 * in most browsers by default, the <dl> element will include vertical margins and the <dd> element includes a left margin
 
-### Nesting lists
+### nesting lists
 
 * always start the new list within an li and should be fine
 
-### List style type
+### list style type
 
 * the ```list-style-type``` property sets the content of a list item marker
 * can change both unordedered and ordered list to anything you like
 * common values: none, disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-alpha / lower-latin, upper-alpha / upper-latin
 
-### Image as a list item marker
+### image as a list item marker
 
 * set list-style-type to none
 * add small backround image (0 50% no-repeat)
@@ -691,14 +691,14 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 * list-style-type followed by list-style-position - space separated
 
-### Horizontally displaying a list
+### horizontally displaying a list
 
 * make ```<li>```s inline-block
 * marker is automatically set to none
 * single spaces can be removed by adding comment between lis
 * inline-block is better than inline as allows specifying margins, paddings
 
-### Floating list
+### floating list
 
 * changing to inline-block or inline removes the marker
 * floating keeps to marker
@@ -954,7 +954,7 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * colspan specifies how many columns the cell should span across (default is one)
 * rowspan is the same as colspan but for rows
 
-## ```border-collapse```
+### ```border-collapse```
 
 * adding border to table-cell can cause borders stacking up (on the inside)
 * ```border-collapse``` property for tables have 3 values: collapse, separate, and inherit
@@ -1022,7 +1022,7 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * Group & Align Vendor Prefixes (and place an unprefixed version of our property and value last)
 * Modularize Styles for Reuse
 
-### Additional resources
+### additional resources
 
 #### HTML & CSS
 
@@ -1033,13 +1033,13 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 *   [Pears - common patterns of markup and style](http://pea.rs/)
 *   [HTML Dog](http://www.htmldog.com/)
 
-#### Design Inspiration
+#### design inspiration
 
 *   [Dribbble](http://dribbble.com/)
 *   [Pattern Tap](http://patterntap.com/)
 *   [Premium Pixels](http://www.premiumpixels.com/)
 
-#### Frameworks & Style Guides
+#### frameworks & style guides
 
 *   [Web Style Guide](http://webstyleguide.com/wsg3/index.html)
 *   [Bootstrap](http://twitter.github.com/bootstrap/)
@@ -1049,7 +1049,7 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 *   [GitHub Styleguide](https://github.com/styleguide/)
 *   [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
 
-#### Icons
+#### icons
 
 *   [Helveticons](http://hlvticons.ch/)
 *   [Ion Icons](http://ionicons.com/)
@@ -1060,7 +1060,7 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 *   [Picons](http://picons.me/)
 *   [The Noun Project](http://thenounproject.com/)
 
-#### Miscellaneous
+#### miscellaneous
 
 *   [COLOURlovers - color trends palettes](http://www.colourlovers.com/)
 *   [ColorHexa - color encyplopedia](http://www.colorhexa.com/)
