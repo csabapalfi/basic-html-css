@@ -19,6 +19,7 @@ Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-cs
 * [ 9. Media](#media)
 * [10. Forms](#forms)
 * [11. Tables](#tables)
+* [12. Best practice](#best-practices)
 
 
 ## 1. <a name="intro"></a> Introduction
@@ -988,3 +989,35 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * most used ```vertical-align``` values are ```top```, ```middle```, and ```bottom```
 * ```vertical-align``` positions text in relation to the table cell, for table-cell elements
 * or to the closest parent element, for inline-level elements
+
+## 12. <a name="best-practices"></a> Best Practices
+
+### HTML best practices
+
+* Write Standards-Compliant Markup
+* Make Use of Semantic Elements
+* Use the Proper Document Structure - html, head, body
+* Keep the Syntax Organized
+    * Use lowercase letters within element names, attributes, and values
+    * Indent nested elements
+    * Strictly use double quotes, not single or completely omitted quotes
+    * Remove the forward slash at the end of self-closing elements
+    * Omit the values on Boolean attributes
+* Use Practical ID & Class Values (with no reference to styling)
+* Use the Alternative Text Attribute on Images (unless they're of no relevalnce to the content, then use background images)
+* Separate Content from Style (no inline styles ever)
+* Avoid a Case of “Divitis” (use HTML5 structural elements and keep the number of elements to the minimum anyways)
+* Continually Refactor Code
+
+### CSS best practices
+
+* Organize Code with Comments (maybe even TOC at the top of the file)
+* Write CSS Using Multiple Lines & Spaces (readibilty, version control)
+* Use Proper Class Names (modular, semantic, all lowercase with hyphens)
+* Build Proficient Selectors (low specificity, no ids)
+* Use Specific Classes When Necessary (instead of lot of nested selectors)
+* Use Shorthand Properties & Values (unless setting only one property)
+* Use Shorthand Hexadecimal Color Values (and lowercase characters)
+* Drop Units from Zero Values
+* Group & Align Vendor Prefixes (and place an unprefixed version of our property and value last)
+* Modularize Styles for Reuse
