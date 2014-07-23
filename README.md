@@ -19,7 +19,7 @@ Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-cs
 * [ 9. Media](#media)
 * [10. Forms](#forms)
 * [11. Tables](#tables)
-* [12. Best practice](#best-practices)
+* [12. Best practices](#best-practices)
 
 
 ## 1. <a name="intro"></a> Introduction
