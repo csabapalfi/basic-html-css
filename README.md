@@ -1021,3 +1021,50 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * Drop Units from Zero Values
 * Group & Align Vendor Prefixes (and place an unprefixed version of our property and value last)
 * Modularize Styles for Reuse
+
+### Additional resources
+
+#### HTML & CSS
+
+*   [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+*   [Opera.Dev](http://dev.opera.com/)
+*   [HMTL5 doctor](http://html5doctor.com/)
+*   [DevDocs - instant docs search](http://devdocs.io/)
+*   [Pears - common patterns of markup and style](http://pea.rs/)
+*   [HTML Dog](http://www.htmldog.com/)
+
+#### Design Inspiration
+
+*   [Dribbble](http://dribbble.com/)
+*   [Pattern Tap](http://patterntap.com/)
+*   [Premium Pixels](http://www.premiumpixels.com/)
+
+#### Frameworks & Style Guides
+
+*   [Web Style Guide](http://webstyleguide.com/wsg3/index.html)
+*   [Bootstrap](http://twitter.github.com/bootstrap/)
+*   [Foundation](http://foundation.zurb.com/)
+*   [Skeleton Framework](http://getskeleton.com/)
+*   [Google HTML/CSS Style Guide](https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
+*   [GitHub Styleguide](https://github.com/styleguide/)
+*   [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
+
+#### Icons
+
+*   [Helveticons](http://hlvticons.ch/)
+*   [Ion Icons](http://ionicons.com/)
+*   [Social Network Icon Pack](http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/)
+*   [Fugue Icons](http://p.yusukekamiyamane.com/)
+*   [famfamfam Icons](http://www.famfamfam.com/lab/icons/silk/)
+*   [Pictos](http://pictos.cc/)
+*   [Picons](http://picons.me/)
+*   [The Noun Project](http://thenounproject.com/)
+
+#### Miscellaneous
+
+*   [COLOURlovers - color trends palettes](http://www.colourlovers.com/)
+*   [ColorHexa - color encyplopedia](http://www.colorhexa.com/)
+*   [Modernizr](http://modernizr.com/)
+*   [jQuery](http://jquery.com/)
+*   [Google Hosted Libraries](https://developers.google.com/speed/libraries/devguide)
+*   [Copy Paste Character](http://copypastecharacter.com/)
