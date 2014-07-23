@@ -145,7 +145,7 @@ preferably single file, in head
 * name or numeric code between
 * [copypastecharacter.com](http://copypastecharacter.com/)
 
-### Hyperlinks
+### hyperlinks
 
 * ```a``` - anchor, link from one web page or resource to another
 * inline element - but the only one which can wrap a block element (HTML5)
@@ -157,12 +157,12 @@ preferably single file, in head
 
 ## 3. <a name='basic-css'></a> Basic CSS
 
-### The cascade
+### the cascade
 
 * styles cascade from the top of a style sheet to the bottom
 * styles are added or overwritten, latter takes precedence
 
-### Specificity
+### specificity
 
 * calculated using **specificity point** values: id selectors - class selectors - type selectors
 * type selector: lowest 0-0-1
@@ -171,7 +171,7 @@ preferably single file, in head
 * three columns for selector counts
 * higher specificity wins even if it appears earlier in the stylesheet
 
-### Combining selectors
+### combining selectors
 
 * multiple selectors can be specified
 * **key selector** - rightmost, straight before the ```{```
@@ -179,12 +179,12 @@ preferably single file, in head
 * no space between selectors - e.g type.class not best practice (type element with class) - just use class
 * specificity weights added up per selector type
 
-### Layering styles
+### layering styles
 
 * use multiple classes (space separated in HTML)
 * helps keeping specificity wieghts low
 
-### Colors
+### colors
 
 * defined in the sRGB color space
 * 4 ways to represent them: keywords, hexadecimal, RGB and HSL
@@ -200,7 +200,7 @@ preferably single file, in head
 * HSL: lightness(0-100%, 0 black, 100 white)
 * hsla: HSL + alpha
 
-### Lengths
+### lengths
 
 * absolute or relative with different units
 * pixels: ```px```, absolute, 96 pixels in an inch but exact measurement may vary
