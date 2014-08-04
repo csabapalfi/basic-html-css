@@ -1032,6 +1032,7 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 *   [DevDocs - instant docs search](http://devdocs.io/)
 *   [Pears - common patterns of markup and style](http://pea.rs/)
 *   [HTML Dog](http://www.htmldog.com/)
+*   [WTF HMTL CSS](http://wtfhtmlcss.com/)
 
 #### design inspiration
 
