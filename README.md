@@ -82,16 +82,17 @@ preferably single file, in head
 
 * block-level elements begin on a new line
 * stacking one on top of the other
-* occupy any available width.
+* occupy any available width
 * may be nested inside one another and may wrap inline-level elements
 * larger pieces of content, such as paragraphs
 
 ### inline
 
-* Inline-level elements do not begin on a new line.
-* They fall into the normal flow of a document, lining up one after the other
-* only maintain the width of their content.
-* Inline-level elements may be nested inside one another; however, they cannot wrap block-level elements
+* inline-level elements do not begin on a new line
+* they fall into the normal flow of a document, lining up one after the other
+* only maintain the width of their content
+* inline-level elements may be nested inside one another
+* however, they cannot wrap block-level elements
 * smaller pieces of content, such as a few words
 
 ### divs, spans
@@ -101,15 +102,15 @@ preferably single file, in head
 * class or id value should not conatin styling references but meaning (e.g orange vs social)
 * ```div``` block element, large groupings of content
 * ```span``` inline element, smaller groupings of text
-
-> HTML comments start with ```<!-- and end with -->.``` CSS comments start with ```/* and end with */.```
+* HTML comments start with ```<!-- and end with -->```
+* CSS comments start with ```/* and end with */```
 
 ### headings
 
 * block-level elements
 * six different rankings, ```<h1>``` through ```<h6>```
 * break up content and establish hierarchy
-* not to increase font size!
+* not to increase font size (your CSS reset prevents that anyways)
 
 ### paragraphs
 
@@ -120,28 +121,30 @@ preferably single file, in head
 
 * ```<strong>``` - strong importance
 * ```<b>``` - stylistically offset
-* ```<em>``` - italicize text, thereby placing emphasis on it
+* ```<em>``` - italicise text, thereby placing emphasis on it
 
 ### building structure
 
 * ```div```s have no semantic value, but HTML introduces structural elements
-* ```<header>```, ```<nav>```, ```<article>```, ```<section>```, ```<aside>```, and ```<footer>```
+* ```<header>```, ```<nav>```, ```<article>```,
+* ```<section>```, ```<aside>```, and ```<footer>```
 
 ### head vs header vs h1-h6
 
-* header - structural element, outlines the heading of a segment of a page (could include a heading, introductory text, maybe even nav)
+* header - structural element, outlines the heading of a segment of a page
+* header could include a heading, introductory text, maybe even nav
 * head - not displayed on a page, outlines metadata
 * h1-h6 - multiple levels of text heading throughout the page
 
 ### div vs article vs section
 
-* div - solely stlying, no value to the outline of the document
-* article - content could stand on it's own, can be redistributed indepentently
+* div - solely styling, no value to the outline of the document
+* article - content could stand on it's own, can be redistributed independently
 * section - thematic grouping of content
 
 ### HMTL entities
 
-* begin with an ampersand, &, and end with a semicolon, ;
+* begin with an ampersand ```&``` and end with a semicolon ```;```
 * name or numeric code between
 * [copypastecharacter.com](http://copypastecharacter.com/)
 
@@ -164,7 +167,8 @@ preferably single file, in head
 
 ### specificity
 
-* calculated using **specificity point** values: id selectors - class selectors - type selectors
+* calculated using **specificity point** values
+* id selectors - class selectors - type selectors
 * type selector: lowest 0-0-1
 * class selector: medium 0-1-0
 * id selector: highest 1-0-0
@@ -182,7 +186,7 @@ preferably single file, in head
 ### layering styles
 
 * use multiple classes (space separated in HTML)
-* helps keeping specificity wieghts low
+* helps keeping specificity weights low
 
 ### colors
 
@@ -191,14 +195,14 @@ preferably single file, in head
 * keywords mapped to rgb values (e.g. ```black``` is rgb(0, 0, 0))
 * hexa: six character notation - 2 chars for r, g, b respectively, 0 black, f white
 * [Adobe Kuler](https://kuler.adobe.com/)
-* rgb() function with 3 params 0-255, 0 black, 255 white
-* rgba() function, rgb + alpha 0-1 with decimal, 0 transparent, 1 opaque
+* rgb() function: with 3 params 0-255, 0 black, 255 white
+* rgba() function: rgb + alpha 0-1 with decimal, 0 transparent, 1 opaque
 * hexa was really popular, now rgba gaining popularity
-* hsl() function, 3 params, not all browsers support it
-* HSL: hue(0-360, color wheel degree)
-* HSL: saturation(0-100%, 0 greyscale, 100 fully saturated),
-* HSL: lightness(0-100%, 0 black, 100 white)
-* hsla: HSL + alpha
+* hsl() function: 3 params, not all browsers support it
+* hue: 0-360, color wheel degree
+* saturation: 0-100%, 0 greyscale, 100 fully saturated
+* lightness: 0-100%, 0 black, 100 white
+* hsla() function: HSL + alpha
 
 ### lengths
 
@@ -206,7 +210,7 @@ preferably single file, in head
 * pixels: ```px```, absolute, 96 pixels in an inch but exact measurement may vary
 * relative: rely on the length of another measurement
 * percentages: ```%```, relative, defined in relation to the length of another object, e.g. parent element
-* ```em```: calculated based on an element’s font size, 1 em = element's font size pixels,
+* ```em```: calculated based on an element’s font size, 1 em = element's font size pixels
 * when a font size is not explicitly stated for an element, the ```em``` unit will be relative to the font size of the closest parent element with a stated font size
 
 ## 4. <a name="box-model"></a> The box model
@@ -281,7 +285,7 @@ preferably single file, in head
 * has width, style, and color (shorthand order or border-width, etc)
 * width, color: standard length and color values
 * style: solid, double, dashed, dotted, and none
-* indidual borders and properties can also be specified: border-top, border-left-width
+* individual borders and properties can also be specified: border-top, border-left-width
 
 ### border-radius
 
@@ -299,7 +303,7 @@ preferably single file, in head
 * values: content-box, padding-box, and border-box
 * content-box: the size of an element begins with the width and height properties, and then any padding, border, or margin property values are added on from there
 * padding-box: actual width, height: element width + padding (width 400 + 20 padding will be 400 px wide)
-* actual width, height: element width + padding + border (width 400 + 20 padding + 5 px border will be 400 px wide)
+* border-box: actual width, height: element width + padding + border (width 400 + 20 padding + 5 px border will be 400 px wide)
 * use border-box to make maths simpler (also helps when mixing percentages with px)
 * drawback of using box-sizing: older browser don't support it
 
@@ -307,7 +311,7 @@ preferably single file, in head
 ### vendor prefixes
 
 * browsers gradually began to support different CSS3 properties and values by the way of vendor prefixes (e.g ```-webkit-box-sizing```)
-*  as parts of the CSS3 specification are finalized and new browser versions are released, these vendor prefixes become less and less relevant
+* as parts of the CSS3 specification are finalized and new browser versions are released, these vendor prefixes become less and less relevant
 * Mozilla Firefox: -moz-
 * Microsoft Internet Explorer: -ms-
 * Webkit (Google Chrome and Apple Safari): -webkit-
@@ -360,7 +364,7 @@ preferably single file, in head
 * effects similar to clearing (return to normal flow) but also makes sure styles are rendered correctly
 * to contain floats, the floated elements must have a parent (container)
 * the flow of the document will remain unaffected outside of the container
-* containing everything within element with class group:
+* containing everything within element with class ```group```:
 
 ```css
 .group:before,
@@ -376,7 +380,7 @@ preferably single file, in head
   *zoom: 1;
 }
 ```
-*  :before and :after pseudo-elements
+* :before and :after pseudo-elements
 * dynamically generated elements above and below the element with the class of group
 * with no content but styles to clear floats
 * also known as clearfix but the class group better represents the content
@@ -394,7 +398,7 @@ preferably single file, in head
 
 * inline-block elements are displayed on the same line, they also include a single space between them
 * low tech, simple solution: no space between start and end tags
-* another low tech solution: start HTML comment after end tag, close comment before start tag
+* another low tech solution: s tart HTML comment after end tag, close comment before start tag
 
 ### creating a reusable layout
 
