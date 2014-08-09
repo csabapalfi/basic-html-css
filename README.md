@@ -301,7 +301,7 @@ preferably single file, in head
 * additive by default
 * CSS3 introduces ```box-sizing```
 * values: content-box, padding-box, and border-box
-* content-box: the size of an element begins with the width and height properties, and then any padding, border, or margin property values are added on from there
+* content-box: actual width, height: element width, any margin, padding border added on top
 * padding-box: actual width, height: element width + padding (width 400 + 20 padding will be 400 px wide)
 * border-box: actual width, height: element width + padding + border (width 400 + 20 padding + 5 px border will be 400 px wide)
 * use border-box to make maths simpler (also helps when mixing percentages with px)
@@ -356,7 +356,7 @@ preferably single file, in head
 * to prevent unwanted content from wrapping around floated elements, we need to clear, or contain, those floats
 * clearing floats returns the page to its normal flow
 * ```clear``` property, values: ```left```, ```right```, ```both```
-*  left clear left floats, right clear right floats, both clears both sides
+* left clear left floats, right clear right floats, both clears both sides
 * clear property applied on an element after floated elements to return the page to it's normal flow
 
 ### containing floats (clearfix)
@@ -390,7 +390,7 @@ preferably single file, in head
 ### positioning with inline-block
 
 * ```display: inline-block```: placing elements next to one another within a line
-* but also accepts width, height, padding, border, margin ... (as opposed to inline)
+* but also accepts width, height, padding, border, margin (as opposed to inline)
 * taking full advantage of the box model without having to worry about clearing any floats
 
 
@@ -408,10 +408,10 @@ preferably single file, in head
 * and float to wrap around content (as originally intended)
 * new CSS specs: watch out for ```flex-``` and ```grid-``` based properties—that
 
-### uniquely Positioning Elements
+### uniquely positioning elements
 
 * precisely positioning elements: floats or inline-block might not do the job
-* typically, most positioning can be handled without the use of the position property and box offset properties, but in certain cases they can be extremely helpful
+* typically, most positioning can be handled without this
 * can use the ```position``` property with box offset properties
 * position: how an element is positioned on a page, if it appears in the normal flow of the document
 * box offset properties moving elements to ```top right bottom``` or  ```left```
@@ -424,7 +424,8 @@ preferably single file, in head
 * element appears within the normal flow a page
 * leaving space for an element as intended
 * also allows an element’s display position to be modified with the box offset properties
-* box offset properties identify where an element will be moved from given its original position (left: 20px - pushes element to the right by 20px)
+* box offset properties identify where an element will be moved from given its original position
+* e.g. left: 20px - pushes element to the right by 20px
 
 ### ```position: absolute```
 
@@ -442,7 +443,7 @@ preferably single file, in head
 ### adding color to text
 
 * ```color``` property
-* add it to html element to set the color for all text on the page
+* add it to body element to set the color for all text on the page
 
 ### font-family
 
@@ -506,8 +507,7 @@ preferably single file, in head
 
 ### text-shadow
 
-* length length length color
-* the shadow’s horizontal offset, vertical offset, blur radius, color (opacity as well, e.g rgba)
+* params: the shadow’s horizontal offset, vertical offset, blur radius, color (opacity as well, e.g rgba)
 * positive offsets right and bottom,  negative offsets left and top
 * multiple shadow can be specified as comma separated
 * ```box-shadow``` accepts same values plus optional fourth length: spread, + optional first value: inset
