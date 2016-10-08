@@ -1,0 +1,23 @@
+{
+  "name": "basic-html-css",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "github-markdown-html start",
+    "build": "github-markdown-html build",
+    "deploy": "git push && gh-pages-deploy"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "noprompt": true,
+    "prep": [
+      "build"
+    ]
+  },
+  "author": {
+    "name": "Csaba Palfi",
+    "url": "https://csabapalfi.github.io"
+  },
+  "github-markdown-html": {
+    "gaTrackingId": "UA-29212656-1"
+  }
+}

@@ -1,42 +1,40 @@
-## Basic HTML & CSS refresher
+# Basic HTML & CSS refresher
 
-Walking through [HTML & CSS lessons from here](http://learn.shayhowe.com/html-css/)
-
-## Why?
-
-> Listen. Even if you think you know the answer. You might not.
+Some notes [HTML & CSS lessons from here](http://learn.shayhowe.com/html-css/)
 
 ## Lessons
 
-* [ 1. Introduction](#intro)
-* [ 2. Basic HTML](#basic-html)
-* [ 3. Basic CSS](#basic-css)
-* [ 4. The box model](#box-model)
-* [ 5. Positioning content](#positioning)
-* [ 6. Typography](#typography)
-* [ 7. Backgrounds](#backgrounds)
-* [ 8. Lists](#lists)
-* [ 9. Media](#media)
-* [10. Forms](#forms)
-* [11. Tables](#tables)
-* [12. Best practices](#best-practices)
+* [ 1. Introduction](#1-introduction)
+* [ 2. Basic HTML](#2-basic-html)
+* [ 3. Basic CSS](#3-basic-css)
+* [ 4. The box model](#4-the-box-model)
+* [ 5. Positioning content](#5-positioning-content)
+* [ 6. Typography](#6-typography)
+* [ 7. Backgrounds](#7-backgrounds)
+* [ 8. Lists](#8-lists)
+* [ 9. Media](#9-media)
+* [10. Forms](#10-forms)
+* [11. Tables](#11-tables)
+* [12. Best practices](#12-best-practices)
 
 
-## 1. <a name="intro"></a> Introduction
+## 1. Introduction
 
 ### HTML terms
 
-* element: ```a```
-* tag: ```<a>..</a>```
-* attribute: e.g. href ```<a href="http://shayhowe.com/">Shay Howe</a>```
+* element: `a`
+* tag: `<a>..</a>`
+* attribute: e.g. href `<a href="http://shayhowe.com/">Shay Howe</a>`
 
 ### self closing tags
 
-```<br> <embed> <hr> <img> <input> <link> <meta> <param> <source> <wbr>```
-
-### structure: ```<!DOCTYPE>```, ```<head>```, ```<body>```
-
+```html
+<br> <embed> <hr> <img> <input> <link> <meta> <param> <source> <wbr>
 ```
+
+### structure: `<!DOCTYPE>`, `<head>`, `<body>`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head></head>
@@ -50,15 +48,15 @@ do it
 
 ### CSS terms
 
-* selector: ```p``` (type selector), ```.class```, ```#id```
-* property: ```p { font-size: ...; }```
-* value: ```p { font-size: 16px; }```
+* selector: `p` (type selector), `.class`, `#id`
+* property: `p { font-size: ...; }`
+* value: `p { font-size: 16px; }`
 
 ### referencing CSS
 
 preferably single file, in head
 
-```
+```html
 <head>
   <link rel="stylesheet" href="main.css">
 </head>
@@ -71,7 +69,7 @@ preferably single file, in head
 * popular: [Eric Meyer’s reset](http://meyerweb.com/eric/tools/css/reset/)
 * Normalize.css - more advanced
 
-## 2. <a name="basic-html"></a> Basic HTML
+## 2. Basic HTML
 
 ### semantics - using the proper element
 
@@ -100,15 +98,15 @@ preferably single file, in head
 * solely for styling, no semantic value
 * with class or id for layout, styling
 * class or id value should not conatin styling references but meaning (e.g orange vs social)
-* ```div``` block element, large groupings of content
-* ```span``` inline element, smaller groupings of text
-* HTML comments start with ```<!-- and end with -->```
-* CSS comments start with ```/* and end with */```
+* `div` block element, large groupings of content
+* `span` inline element, smaller groupings of text
+* HTML comments start with `<!-- and end with -->`
+* CSS comments start with `/* and end with */`
 
 ### headings
 
 * block-level elements
-* six different rankings, ```<h1>``` through ```<h6>```
+* six different rankings, `<h1>` through `<h6>`
 * break up content and establish hierarchy
 * not to increase font size (your CSS reset prevents that anyways)
 
@@ -117,17 +115,17 @@ preferably single file, in head
 * block level
 * pretty self explanatory
 
-### ```<b>```, ```<strong>```, ```<em>```
+### `<b>`, `<strong>`, `<em>`
 
-* ```<strong>``` - strong importance
-* ```<b>``` - stylistically offset
-* ```<em>``` - italicise text, thereby placing emphasis on it
+* `<strong>` - strong importance
+* `<b>` - stylistically offset
+* `<em>` - italicise text, thereby placing emphasis on it
 
 ### building structure
 
-* ```div```s have no semantic value, but HTML introduces structural elements
-* ```<header>```, ```<nav>```, ```<article>```,
-* ```<section>```, ```<aside>```, and ```<footer>```
+* `div`s have no semantic value, but HTML introduces structural elements
+* `<header>`, `<nav>`, `<article>`,
+* `<section>`, `<aside>`, and `<footer>`
 
 ### head vs header vs h1-h6
 
@@ -144,21 +142,21 @@ preferably single file, in head
 
 ### HMTL entities
 
-* begin with an ampersand ```&``` and end with a semicolon ```;```
+* begin with an ampersand `&` and end with a semicolon `;`
 * name or numeric code between
 * [copypastecharacter.com](http://copypastecharacter.com/)
 
 ### hyperlinks
 
-* ```a``` - anchor, link from one web page or resource to another
+* `a` - anchor, link from one web page or resource to another
 * inline element - but the only one which can wrap a block element (HTML5)
 * href (hyperlink reference) attribute, required, specifies destination
 * relative path vs absolute urls
 * mailto: links, with subject, body, cc
-* target="_blank" opens link a new window
-* link to part of the same page: id attribute on element, then ```<a>``` with href=id-value
+* `target="_blank"` opens link a new window
+* link to part of the same page: id attribute on element, then `<a>` with `href=id-value`
 
-## 3. <a name='basic-css'></a> Basic CSS
+## 3. Basic CSS
 
 ### the cascade
 
@@ -178,7 +176,7 @@ preferably single file, in head
 ### combining selectors
 
 * multiple selectors can be specified
-* **key selector** - rightmost, straight before the ```{```
+* **key selector** - rightmost, straight before the `{`
 * **prequalifiers** - all the other left to the key selector
 * no space between selectors - e.g type.class not best practice (type element with class) - just use class
 * specificity weights added up per selector type
@@ -192,7 +190,7 @@ preferably single file, in head
 
 * defined in the sRGB color space
 * 4 ways to represent them: keywords, hexadecimal, RGB and HSL
-* keywords mapped to rgb values (e.g. ```black``` is rgb(0, 0, 0))
+* keywords mapped to rgb values (e.g. `black` is `rgb(0, 0, 0)`)
 * hexa: six character notation - 2 chars for r, g, b respectively, 0 black, f white
 * [Adobe Kuler](https://kuler.adobe.com/)
 * rgb() function: with 3 params 0-255, 0 black, 255 white
@@ -207,21 +205,21 @@ preferably single file, in head
 ### lengths
 
 * absolute or relative with different units
-* pixels: ```px```, absolute, 96 pixels in an inch but exact measurement may vary
+* pixels: `px`, absolute, 96 pixels in an inch but exact measurement may vary
 * relative: rely on the length of another measurement
-* percentages: ```%```, relative, defined in relation to the length of another object, e.g. parent element
-* ```em```: calculated based on an element’s font size, 1 em = element's font size pixels
-* when a font size is not explicitly stated for an element, the ```em``` unit will be relative to the font size of the closest parent element with a stated font size
+* percentages: `%`, relative, defined in relation to the length of another object, e.g. parent element
+* `em`: calculated based on an element’s font size, 1 em = element's font size pixels
+* when a font size is not explicitly stated for an element, the `em` unit will be relative to the font size of the closest parent element with a stated font size
 
-## 4. <a name="box-model"></a> The box model
+## 4. The box model
 
-### ```display```
+### `display`
 
 * determines how elements are displayed (block, inline and more)
 * every element has a default display property value which can be overwritten
 * common values are block, inline, inline-block, and none
-* ```inline-block```: allow an element to behave as a block-level element (accepting all box model properties) but displayed inline with other elements
-* ```none``` completely hides an element and render the page as if that element and nested elements doesn’t exist
+* `inline-block`: allow an element to behave as a block-level element (accepting all box model properties) but displayed inline with other elements
+* `none` completely hides an element and render the page as if that element and nested elements doesn’t exist
 
 ### the box model concept
 
@@ -237,7 +235,7 @@ preferably single file, in head
 ### width and height
 
 * every element has default width and height (might be 0px)
-* ```width``` and ```height``` may be specified - **but only for non-inline elements**
+* `width` and `height` may be specified - **but only for non-inline elements**
 * **block width**: block-level elements have a default width of 100%, consuming the entire horizontal space available
 * **inline width**: inline and inline-block elements expand and contract horizontally to accommodate their content
 * **height**: all elements expand and contract vertically to accommodate their content
@@ -250,7 +248,7 @@ preferably single file, in head
 
 ### margin
 
-* ```margin```: set the amount of space that surrounds an element
+* `margin`: set the amount of space that surrounds an element
 * the margin outside of any border and are completely transparent in color
 * vertical margins, top and bottom, are not accepted by inline-level elements
 * margins work like normal for block and inline-block elements
@@ -299,7 +297,7 @@ preferably single file, in head
 ### box-sizing
 
 * additive by default
-* CSS3 introduces ```box-sizing```
+* CSS3 introduces `box-sizing`
 * values: content-box, padding-box, and border-box
 * content-box: actual width, height: element width, any margin, padding border added on top
 * padding-box: actual width, height: element width + padding (width 400 + 20 padding will be 400 px wide)
@@ -310,7 +308,7 @@ preferably single file, in head
 
 ### vendor prefixes
 
-* browsers gradually began to support different CSS3 properties and values by the way of vendor prefixes (e.g ```-webkit-box-sizing```)
+* browsers gradually began to support different CSS3 properties and values by the way of vendor prefixes (e.g `-webkit-box-sizing`)
 * as parts of the CSS3 specification are finalized and new browser versions are released, these vendor prefixes become less and less relevant
 * Mozilla Firefox: -moz-
 * Microsoft Internet Explorer: -ms-
@@ -325,7 +323,7 @@ preferably single file, in head
 * universal selector: *  - catch-all to select all elements
 * :before and :after pseudo-elements: dynamically generated with CSS
 
-## 5. <a name="positioning"></a> Positioning content
+## 5. Positioning content
 
 ### positioning with floats
 
@@ -337,12 +335,12 @@ preferably single file, in head
 
 ### floating in practice
 
-* common float values are: ```left``` and ```right```
+* common float values are: `left` and `right`
 * floated elements will float all the way to the edge of its parent element
 * no parent: floated element floats to the edge of the page
 * floated element width defaults to the width of the content within it
-* use the ```width``` property to specify width
-* use ```margin``` to prevent elements touching each other
+* use the `width` property to specify width
+* use `margin` to prevent elements touching each other
 * floated inline elements change their display value to block and accept width, height
 
 ### clearing & containing floats
@@ -355,7 +353,7 @@ preferably single file, in head
 ### clearing floats
 * to prevent unwanted content from wrapping around floated elements, we need to clear, or contain, those floats
 * clearing floats returns the page to its normal flow
-* ```clear``` property, values: ```left```, ```right```, ```both```
+* `clear` property, values: `left`, `right`, `both`
 * left clear left floats, right clear right floats, both clears both sides
 * clear property applied on an element after floated elements to return the page to it's normal flow
 
@@ -364,7 +362,7 @@ preferably single file, in head
 * effects similar to clearing (return to normal flow) but also makes sure styles are rendered correctly
 * to contain floats, the floated elements must have a parent (container)
 * the flow of the document will remain unaffected outside of the container
-* containing everything within element with class ```group```:
+* containing everything within element with class `group`:
 
 ```css
 .group:before,
@@ -389,7 +387,7 @@ preferably single file, in head
 
 ### positioning with inline-block
 
-* ```display: inline-block```: placing elements next to one another within a line
+* `display: inline-block`: placing elements next to one another within a line
 * but also accepts width, height, padding, border, margin (as opposed to inline)
 * taking full advantage of the box model without having to worry about clearing any floats
 
@@ -406,20 +404,20 @@ preferably single file, in head
 * floats vs inline-block is open to debate
 * one approach:  inline-block elements to create the grid—or layout—of
 * and float to wrap around content (as originally intended)
-* new CSS specs: watch out for ```flex-``` and ```grid-``` based properties—that
+* new CSS specs: watch out for `flex-` and `grid-` based properties—that
 
 ### uniquely positioning elements
 
 * precisely positioning elements: floats or inline-block might not do the job
 * typically, most positioning can be handled without this
-* can use the ```position``` property with box offset properties
+* can use the `position` property with box offset properties
 * position: how an element is positioned on a page, if it appears in the normal flow of the document
-* box offset properties moving elements to ```top right bottom``` or  ```left```
-* default position value is ```static```
-* ```static``` means the element appears in the normal flow and doesn't accept box offset properties
+* box offset properties moving elements to `top right bottom` or  `left`
+* default position value is `static`
+* `static` means the element appears in the normal flow and doesn't accept box offset properties
 * other position values are: relative and absolute
 
-### ```position: relative```
+### `position: relative`
 
 * element appears within the normal flow a page
 * leaving space for an element as intended
@@ -427,14 +425,14 @@ preferably single file, in head
 * box offset properties identify where an element will be moved from given its original position
 * e.g. left: 20px - pushes element to the right by 20px
 
-### ```position: absolute```
+### `position: absolute`
 
 * element does not appear within the normal flow a page
 * original space and position of the element is not preserved
 * elements are moved in relation to their closest relatively positioned parent element
 * should a relatively positioned parent element not exist, the element will be positioned in relation to the <body> element
 
-## 6. <a name="typography"></a> Typography
+## 6. Typography
 
 * embedded fonts allow using any font you like but important to learn about typography
 * typeface is what we see, how text looks, feels, and reads, the artistic value
@@ -442,7 +440,7 @@ preferably single file, in head
 
 ### adding color to text
 
-* ```color``` property
+* `color` property
 * add it to body element to set the color for all text on the page
 
 ### font-family
@@ -450,7 +448,7 @@ preferably single file, in head
 * which font to use
 * comma separated font names, left to right fallback
 * font names with multiple word to be wrapped in double quotes
-* last font should be a keyword, system default font for e.g. either ```sans-serif``` or ```serif```
+* last font should be a keyword, system default font for e.g. either `sans-serif` or `serif`
 
 ### font-size
 
@@ -481,14 +479,14 @@ preferably single file, in head
 
 ### font shorthand
 
-* ```font: font-style font-variant font-weight font-size/line-height font-family, font-family```
+* `font: font-style font-variant font-weight font-size/line-height font-family, font-family`
 * everything optional apart from font-size and font-family
 
-### ```:hover```
+### `:hover`
 
 * pseudo-selector
 * maybe added at the end of a selector to style when an element is in a specific state
-* ```:hover``` pseudo-class styles an element when a user hovers over that
+* `:hover` pseudo-class styles an element when a user hovers over that
 
 ### text-align
 
@@ -510,7 +508,7 @@ preferably single file, in head
 * params: the shadow’s horizontal offset, vertical offset, blur radius, color (opacity as well, e.g rgba)
 * positive offsets right and bottom,  negative offsets left and top
 * multiple shadow can be specified as comma separated
-* ```box-shadow``` accepts same values plus optional fourth length: spread, + optional first value: inset
+* `box-shadow` accepts same values plus optional fourth length: spread, + optional first value: inset
 
 ### text-transform
 
@@ -545,11 +543,11 @@ preferably single file, in head
 ### embedding web fonts
 
 * upload fonts to a server (check font lincence!)
-* include them on a website via the CSS @font-face at-rule
+* include them on a website via the CSS `@font-face` at-rule
 * surround embedded font-family name with quotation marks within any CSS reference
 * [Google Fonts](https://www.google.com/fonts)
 
-```
+```css
 @font-face {
   font-family: "Lobster";
   src: local("Lobster"), url("lobster.woff") format("woff");
@@ -558,17 +556,17 @@ preferably single file, in head
 
 ### quotes, citations
 
-* ```<cite>``` - reference a creative work, author, or resource (typically title, author, URL)
-* ```<q>``` -  short, inline quotations, inline
-* ```<blockquote>``` -  longer external quotations, block
+* `<cite>` - reference a creative work, author, or resource (typically title, author, URL)
+* `<q>` -  short, inline quotations, inline
+* `<blockquote>` -  longer external quotations, block
 * q, blockquote: the browser will insert the proper quotation marks (it even respects the global lang attribute)
 * q, blockquote: optional cite attribute - doesn't change appearance
 * blockquote can usually include citation: both cite attrubite and cite element
 
-## 7. <a name="backgrounds"></a> Backgrounds
+## 7. Backgrounds
 
 * Backgrounds can be a solid color, an image, a gradient, or these combined.
-* ```background``` - shorthand for setting background properties
+* `background` - shorthand for setting background properties
 
 ### setting background color
 
@@ -582,17 +580,17 @@ preferably single file, in head
 ### background repeat
 
 * a background image repeated indefinitely, both vertically and horizontally to fill up the element (if image is smaller)
-* ```background-repeat property```: repeat, repeat-x, repeat-y, and no-repeat
+* `background-repeat property`: repeat, repeat-x, repeat-y, and no-repeat
 
 ### background position
 
 * background images are positioned in the top-left corner by default
-* ```background position```: horizontal offset vertical offset
+* `background position`: horizontal offset vertical offset
 * shorthand: use one value and it'll apply both vertically and horizontally
-* can also use percentages and ```top, right, bottom, left``` keywords
+* can also use percentages and `top, right, bottom, left` keywords
 * 0 0 is the same as top left, 100% 0 is top right, 100% 100% is bottom right
 * advantage of percentages: 50% - centering
-* ```background:``` shorthand: color, image, position, repeat values - space separated
+* `background:` shorthand: color, image, position, repeat values - space separated
 
 ### CSS3: Gradient backgrounds
 
@@ -605,7 +603,7 @@ preferably single file, in head
 * linear-gradient() function accepts two values: start and end color, browser takes care of transition
 *  -webkit-linear-gradient() -moz-linear-gradient()
 * always specify a solid fallback color before the gradient (in a separate property)
-* also supports direction as first argument (degree (0-360) e.g. 45deg, or keyword e.g. ```to right bottom```)
+* also supports direction as first argument (degree (0-360) e.g. 45deg, or keyword e.g. `to right bottom`)
 
 ### CSS3: radial gradient
 
@@ -627,46 +625,46 @@ preferably single file, in head
 
 ### CSS3: background size
 
-*  ```background-size``` property - accepts two lengths
-* ```auto``` keyword value for one of the parameters to keep aspect ratio
+*  `background-size` property - accepts two lengths
+* `auto` keyword value for one of the parameters to keep aspect ratio
 * percentage values are in relation to the element's size and not the image
-* ```cover``` keyword value: resize background image to cover element (might be cut off)
-* ``contain``` keyword value: resize to fit into the element (might not occupy the full element)
+* `cover` keyword value: resize background image to cover element (might be cut off)
+* ``contain` keyword value: resize to fit into the element (might not occupy the full element)
 
 ### CSS3: background clip and origin
 
-* ```background-clip``` - surface area a background image will cover
-* ```background-origin``` - where the background-position should originate
+* `background-clip` - surface area a background image will cover
+* `background-origin` - where the background-position should originate
 * border-box, padding-box, and content-box keyword values may be used for both of these
 * background-clip: border-box by default, background image can extend into any border
 * background-origin: padding-box by default, beginning of a background image can extend into the padding
 
-## 8. <a name="lists"></a> Lists
+## 8. Lists
 
 HTML has 3 types of lists: unordered, ordered, and description lists
 
 ### unordered lists
 
-* ```<ul>``` unordered list block-level element
-* ```<li>``` list items
+* `<ul>` unordered list block-level element
+* `<li>` list items
 * by default most browsers add a solid dot list item marker and margin and padding
 
 ### ordered lists
 
-* ```<ol>``` ordered list element
-* works pretty much similarly to ```<ul>``` but order matters
+* `<ol>` ordered list element
+* works pretty much similarly to `<ul>` but order matters
 * by default most browser use numbers as list item markers
-* ```start``` attribute on ```<ol>``` element tells where to start counting from (e.g paginated list)
-* ```start``` attribute only accepts integers
-* ```reversed``` boolean attribute (no value required, present=true) tells if the numbers should be in reverse order
-* ```value``` attribute on an individual ```<li>``` within an ```<ol>``` changes its value within the list
+* `start` attribute on `<ol>` element tells where to start counting from (e.g paginated list)
+* `start` attribute only accepts integers
+* `reversed` boolean attribute (no value required, present=true) tells if the numbers should be in reverse order
+* `value` attribute on an individual `<li>` within an `<ol>` changes its value within the list
 * any item appearing after the one with the value is calculated accordingly
 
 ### description lists
 
 * description lists are used to outline multiple terms and their descriptions (e.g. glossary)
-* description list block-level element, ```<dl>```
-* an item consists of one or more description terms ```<dt>``` followed by one or more descriptions ```<dd>```
+* description list block-level element, `<dl>`
+* an item consists of one or more description terms `<dt>` followed by one or more descriptions `<dd>`
 * in most browsers by default, the <dl> element will include vertical margins and the <dd> element includes a left margin
 
 ### nesting lists
@@ -675,7 +673,7 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 ### list style type
 
-* the ```list-style-type``` property sets the content of a list item marker
+* the `list-style-type` property sets the content of a list item marker
 * can change both unordedered and ordered list to anything you like
 * common values: none, disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-alpha / lower-latin, upper-alpha / upper-latin
 
@@ -697,7 +695,7 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 ### horizontally displaying a list
 
-* make ```<li>```s inline-block
+* make `<li>`s inline-block
 * marker is automatically set to none
 * single spaces can be removed by adding comment between lis
 * inline-block is better than inline as allows specifying margins, paddings
@@ -709,11 +707,11 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 * need to add margin or padding to prevent markers overlapping content
 * always clear or contain floats
 
-## 9. <a name="media"></a> Adding Media
+## 9. Adding Media
 
 ### adding images
 
-* ```<img>``` inline element
+* `<img>` inline element
 * img element is a self-containing or empty element, single, doesn't wrap around any content
 * src attribute and value must exist with a valid URL
 * alt (alternative text) attribute, which describes the contents of an image
@@ -738,13 +736,13 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 * by default appears in the same line as the content surrounding it (inline)
 * increases the height of the line it appears to match image height
-* when set to ```display: block``` then in it;s own line (as usual)
+* when set to `display: block` then in it;s own line (as usual)
 * or flush left or right (by floating - it's original purpose)
 * usually need margin around a floated image (can also create a frame with background, padding)
 
 ### image element vs background image
 
-* use ```<img>``` if image holds semantic value and relevant to the content of the page
+* use `<img>` if image holds semantic value and relevant to the content of the page
 * use background image when image is part of design or UI and not directly relevant
 
 ### adding audio
@@ -758,8 +756,8 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 ### audio types, fallbacks
 
 * different browsers support different formats
-* we can get rid of the src attribute and wrap a number of ```<source>``` elements with an audio tag
-* source element have ```src``` and ```type``` (e.g. audio/ogg, audio/mpeg) attributes
+* we can get rid of the src attribute and wrap a number of `<source>` elements with an audio tag
+* source element have `src` and `type` (e.g. audio/ogg, audio/mpeg) attributes
 * browser picks the one it recognizes
 * as last fallback arbitrary HTML can be added
 * media.io, mirovideoconverter for conversion
@@ -787,36 +785,36 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 * iframe contents don't inherit styles from the page including them
 * links are opened within the frame
-* ```seamless``` boolean attribute changes above behaviour (but not supported by older browsers)
+* `seamless` boolean attribute changes above behaviour (but not supported by older browsers)
 
 ### figures
 
-* ```<figure>```, block-level, identify and wrap self-contained content, often media
+* `<figure>`, block-level, identify and wrap self-contained content, often media
 * may surround image, video, etc, or multiple of those (if they form a group)
 * if the figure element is moved it shouldn't disrupt the content of the page
 
 ### figure caption
 
-* ```<figcaption>``` element adds caption within a figure element
+* `<figcaption>` element adds caption within a figure element
 * may appear before or after media, or anywhere within figure but only once
 * serves as caption for all content within the figure element
 * may also be used to replace img elements alt attribute
 
-## 10. <a name="forms"></a> Forms
+## 10. Forms
 
 * forms aquire user input
 * different elements are used to capture different types of data
 
 ### initializing a form
 
-* ```<form>``` element wraps all the elements included in the form
-* ```action``` attribute: URL where the form should be sent to
-* ```method``` attribute: HTTP method used for submitting the form
+* `<form>` element wraps all the elements included in the form
+* `action` attribute: URL where the form should be sent to
+* `method` attribute: HTTP method used for submitting the form
 
 ### text fields
 
-* ```<input>``` element with ```type``` attribute value ```text```
-* ```name``` attribute is used as the name of the control and also sent to the server
+* `<input>` element with `type` attribute value `text`
+* `name` attribute is used as the name of the control and also sent to the server
 * input element is self contained
 * originally the only type attribute values were text and password
 * HTML5 adds the following for semantic clarity: color, date, datetime, email, month, number, range, search, tel, time, url, week
@@ -824,41 +822,41 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 ### textarea
 
-* ```<textarea>``` element, capture multiline text input
-* no ```type``` attribute as it only supports text
-* ```name``` attribute is similar to input element
-* two sizing attributes (```cols``` and ```rows```) but use CSS width and height instead
+* `<textarea>` element, capture multiline text input
+* no `type` attribute as it only supports text
+* `name` attribute is similar to input element
+* two sizing attributes (`cols` and `rows`) but use CSS width and height instead
 
 ### radio buttons
 
 * allow user to make quick choice from a small list of options
 * only one option can be choosen
-* ```<input>``` element with ```type="radio"```
-* ```value``` attribute specifies to value sent to the server
-* ```name``` attribute should be the same for all checkboxes in a group
-* ```checked``` boolean atrribute can be used to pre-select an option
-* input is still self-closing, value seen by user is outside it: ```<input type="radio" name="day" value="Friday" checked> Friday```
+* `<input>` element with `type="radio"`
+* `value` attribute specifies to value sent to the server
+* `name` attribute should be the same for all checkboxes in a group
+* `checked` boolean atrribute can be used to pre-select an option
+* input is still self-closing, value seen by user is outside it: `<input type="radio" name="day" value="Friday" checked> Friday`
 
 ### checkboxes
 
 * really similar to radio buttons, but
 * allows multiple choice, all values are sent to the server
-* ```<input>``` with ```type="checkbox"```
+* `<input>` with `type="checkbox"`
 
 ### dropdown lists
 
 * when you have a longer list of options
-* a ```<select>``` element wraps all of the options marked up by ```<option>``` elements
-* the ```name``` attribute is on the select element
-* the ```value``` attribute is on the option element
+* a `<select>` element wraps all of the options marked up by `<option>` elements
+* the `name` attribute is on the select element
+* the `value` attribute is on the option element
 * the option element wraps the user visible text
 * selected boolean attribute marks the selected options
-* boolean attribute ```multiple``` on select element allows multiple selection
+* boolean attribute `multiple` on select element allows multiple selection
 * size of select element can be controlled via CSS
 
 ### submit input
 
-* submit button can be added using input with ```type="submit"```
+* submit button can be added using input with `type="submit"`
 * value attribute specifies button text
 
 ### submit button
@@ -869,105 +867,107 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 ### hidden input
 
-* input with ```"type="hidden"``` is not shown on the page but still submitted
+* input with `"type="hidden"` is not shown on the page but still submitted
 * can obviously still be viewed in page source, so not for secure stuff
 
 ### file input
 
-* input with ```"type="file"``` can be used to attach files to a form
+* input with `"type="file"` can be used to attach files to a form
 * each browser comes with default styles for this, which can't be overriden CSS, JS help here
 
 ### labels
 
 * provide caption or headings for from controls
-* using ```<label>``` element with ```for``` attribute matching the ```id``` attribute of the form element
+* using `<label>` element with `for` attribute matching the `id` attribute of the form element
 * clicking the label brings the linked form element into focus
-* label may also wrap input elements and in this case the ```for``` and ```id``` atrributes may be omitted
+* label may also wrap input elements and in this case the `for` and `id` atrributes may be omitted
 
 ### fieldsets
 
-* group related form controls and label by wrapping them with ```<fieldset>```
+* group related form controls and label by wrapping them with `<fieldset>`
 * block level element, default CSS has a border
 
 ### legend
 
-* ```<legend>``` element provides caption or heading for ```fieldset``` element
-* should be the first element after the opening ```fieldset``` tag
+* `<legend>` element provides caption or heading for `fieldset` element
+* should be the first element after the opening `fieldset` tag
 * appears on the top left of the fieldset border
 
-### ```disabled``` attribute
+### `disabled` attribute
 
 * turns of element of control so that it's not interactive and values are not sent to the server
 * can be applied to input or fieldset (form?)
 * if input has type hidden and the disabled attribute as well then hidden is ignored
 
-### ```placeholder``` attribute
+### `placeholder` attribute
 
 * HTML 5 attribute, provides hint
-* disappears as soon as the control is clicked or gains focus (hence different from ```value```)
-* ```value``` for prepopulating data and ```placeholder``` for suggestions
+* disappears as soon as the control is clicked or gains focus (hence different from `value`)
+* `value` for prepopulating data and `placeholder` for suggestions
 
-### ```required``` attribute
+### `required` attribute
 
 * boolean attribute introduced in HTML5
 * enforces that form control contains a value before submitting
 * error message is shown if no value but currently the browsers control the error message styling
-* invalid elements and form controls can be styled using ```:optional``` and ```:required``` pseudo classes
-* validation also respect input types (e.g. ```type="email"``` should be a valid email)
+* invalid elements and form controls can be styled using `:optional` and `:required` pseudo classes
+* validation also respect input types (e.g. `type="email"` should be a valid email)
 
 ### additional attributes
 
-```accept autocomplete autofocus formaction formenctype formmethod formnovalidate formtarget max maxlength min pattern readonly selectionDirection step```
+```
+accept autocomplete autofocus formaction formenctype formmethod formnovalidate formtarget max maxlength min pattern readonly selectionDirection step
+```
 
-## 11. <a name="tables"></a> Tables
+## 11. Tables
 
 * to mark up structured, tabular data
 * was abused back when didn't all support CSS
 
 ### table, table rows and cells
 
-* table content is wrapped in a ```<table>``` element
-* a table may contain many rows that are marked up with the ```<tr>``` element
-* table cells are added into rows using the ```<td>``` element
+* table content is wrapped in a `<table>` element
+* a table may contain many rows that are marked up with the `<tr>` element
+* table cells are added into rows using the `<td>` element
 
 ### table heading
 
-* using the ```<th>``` element instead of td marks a cell as a table header
+* using the `<th>` element instead of td marks a cell as a table header
 * table header adds semantic value to the content
-* ```scope``` atribute on a th specifies the what the header relates to
-* potential scope values are ```col```, ```row```, ```colgroup```, and ```rowgroup```
+* `scope` atribute on a th specifies the what the header relates to
+* potential scope values are `col`, `row`, `colgroup`, and `rowgroup`
 * the headers attribute may be used to associate a cell to a header
-* above is done by specifying the linked ```<th>```'s id attribute in the cell's (td or th) headers attribute
+* above is done by specifying the linked `<th>`'s id attribute in the cell's (td or th) headers attribute
 
 ### table caption
 
-* provides a title for the table using the ```<caption>``` element
+* provides a title for the table using the `<caption>` element
 * the caption element has to be the first element after the opening table tag
 
 ### table head, body and foot
 
 * content of a table maybe broken to groups: head, body and foot
-* ```<thead>``` element wraps the heading row(s) of the table and comes after any caption and before any tbody elements
-* ```<tbody>``` element wraps the primary data rows
-* ```<tfoot>``` element wraps the rows outlining the table
+* `<thead>` element wraps the heading row(s) of the table and comes after any caption and before any tbody elements
+* `<tbody>` element wraps the primary data rows
+* `<tfoot>` element wraps the rows outlining the table
 * before HTML5 tfoot had to come directly after thead
 
 ### combining multiple cells
 
-* td or th can have a ```colspan``` or ```rowspan``` attribute
+* td or th can have a `colspan` or `rowspan` attribute
 * colspan specifies how many columns the cell should span across (default is one)
 * rowspan is the same as colspan but for rows
 
-### ```border-collapse```
+### `border-collapse`
 
 * adding border to table-cell can cause borders stacking up (on the inside)
-* ```border-collapse``` property for tables have 3 values: collapse, separate, and inherit
+* `border-collapse` property for tables have 3 values: collapse, separate, and inherit
 * collapse collapses/condenses the borders to one border, separate stack them up against each other
 
 
 ### border-spacing
 
-* when using ```border-collapse: separate``` (or wasn't defined) you can specify the space between borders
+* when using `border-collapse: separate` (or wasn't defined) you can specify the space between borders
 * use this instead of a margin to avoid more space between cells than on the sides
 * accepts a length value and separates borders by that length
 * when two lengths are specified the first is horizontal, second is vertical spacing
@@ -976,25 +976,25 @@ HTML has 3 types of lists: unordered, ordered, and description lists
 
 * make sure border-collapse is collapse
 * add border bottom to th and tr
-* set no border to ```th:last-child```
+* set no border to `th:last-child`
 
 ### striping tables
 
-* use ```tr:nth-child(even)``` to set color
-* make sure ```border-collapse: separate;``` and ```border-spacing: 0;``` is set on the table to avoid issue because td includes a border by default but th doesn't
+* use `tr:nth-child(even)` to set color
+* make sure `border-collapse: separate;` and `border-spacing: 0;` is set on the table to avoid issue because td includes a border by default but th doesn't
 * only set right and bottom borders since border-collapse is separate
-* ```td:first-child``` gets a left border
+* `td:first-child` gets a left border
 
 ### aligning text in table cells
 
-* moving text around horizontally - ```text-align``` property as seen in typography
-* moving text around vertically - ```vertical-align``` property
-* ```vertical-align``` only works on display inline and table-cell elements
-* most used ```vertical-align``` values are ```top```, ```middle```, and ```bottom```
-* ```vertical-align``` positions text in relation to the table cell, for table-cell elements
+* moving text around horizontally - `text-align` property as seen in typography
+* moving text around vertically - `vertical-align` property
+* `vertical-align` only works on display inline and table-cell elements
+* most used `vertical-align` values are `top`, `middle`, and `bottom`
+* `vertical-align` positions text in relation to the table cell, for table-cell elements
 * or to the closest parent element, for inline-level elements
 
-## 12. <a name="best-practices"></a> Best Practices
+## 12. Best Practices
 
 ### HTML best practices
 
